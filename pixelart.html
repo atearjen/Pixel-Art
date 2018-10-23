@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Indie Flower">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="toolbar">
+    <h2>Grid Size</h2>
+
+    <form id="sizePicker">
+        <h3>Grid Height:</h3>
+        <input title="Grid Height" type="number" id="inputHeight" name="height" min="1" value="1">
+
+        <h3>Grid Width:</h3>
+        <input title="Grid Width" type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit" value="Go!">
+    </form>
+
+    <form id="canvasSettings">
+        <h3>Pixel Color</h3>
+        <input type="color" id="colorPicker" value="#FF8080">
+
+        <h3>Grid Background Color</h3>
+        <input type="color" id="backgroundPicker" value="#800040">
+
+        <div>
+
+            <button type="button" id="resetGrid">
+                <h3 id="resetGridText"></h3>
+                <i class="far fa-trash-alt"></i></button>
+        </div>
+    </form>
+
+</div>
+    <h1>Pixel Art Maker</h1>
+
+    <h2 id="canvas">Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="design.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    height: 800px;
+    background: linear-gradient(to bottom right, white 0%, #cc99ff 100%);
+}
+
+h1 {
+    font-family: helvectica;
+    font-size:50px;
+    margin: 0.2em;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family:helvetica;
+    margin: 2em 0 0.25;
+}
+
+#resetGridText {
+    font-family: helvetica;
+    display: inline-block;
+}
+
+table,
+tr,
+td {
+    border:1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #800040;
+}
+
+tr {
+    height: 2em;
+}
+
+td {
+    width: 2em;
+}
+
+input[type=number] {
+    width: 4em;
+}
+
+#canvas, #pixelCanvas {
+    text-align: center;
+}
+
+#canvasSettings, #sizePicker {
+    margin: 1em;
+}
+
+#colorPicker, #backgroundPicker {
+   border-radius: 10%
+}
+
+#resetGrid{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#toolbar {
+    border-style: solid;
+    border-width: 1.4px;
+    border-color: grey;
+    padding: 5px;
+    float: right;
+    order: 1;
+}
